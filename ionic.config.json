@@ -1,0 +1,7 @@
+{
+  "name": "celular",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

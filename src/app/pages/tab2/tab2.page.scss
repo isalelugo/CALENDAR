@@ -1,0 +1,53 @@
+// .img {
+//   width: 70%;
+//   height: 40vh;
+// }
+.resize-img {
+  height: 25rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+.margen {
+  margin-top: 5rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../../assets/images/Viaje/fondo_viaje\(large\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+
+  animation-name: animeTranslation;
+  animation-direction: alternate-reverse; 
+  animation-duration: 30s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animeTranslation{
+  0% {
+    background-image: url('../../../assets/images/Fiesta/sujeto_fiesta\(medium\)2.jpg');
+  }
+  20% {
+    background-image: url('../../../assets/images/Fiesta/fondo_fiesta\(large\).jpg');
+  }
+  40% {
+    background-image: url('../../../assets/images/Viaje/sujeto_viaje\(medium\)2.jpg');
+  }
+  60% {
+    background-image: url('../../../assets/images/Viaje/sujeto_viaje\(medium\).jpg');
+  }
+  80% {
+    background-image: url('../../../assets/images/Fiesta/fondo_fiesta\(large\)2.jpg');
+  }
+  100% {
+    background-image: url('../../../assets/images/Trabajo/fondo_trabajo\(large\).jpg');
+  }
+}

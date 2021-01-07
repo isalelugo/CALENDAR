@@ -1,0 +1,15 @@
+<ion-content color="dark">
+  <div class="container">
+    <ion-slides [options]="slideOpts">
+      <ion-slide *ngFor="let tarea of tareas"
+                  [routerLink]="tarea.redirecTo">
+        <div class="margen">
+          <div class="ion-text-uppercase">
+            <h1>{{tarea.nombre}}</h1>
+          </div>
+            <img class="resize-img" src={{tarea.img}}/>
+          </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
